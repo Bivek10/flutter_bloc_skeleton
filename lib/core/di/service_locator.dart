@@ -10,7 +10,9 @@ import '../../features/cart/cart_di.dart';
 import '../../features/product/product_di.dart';
 
 import '../../features/profile/presentation/profile_di.dart';
+import '../../features/chat/chat_di.dart';
 import '../../firebase_options.dart';
+
 import '../../shared/cubit/locale_cubit.dart';
 import '../routes/app_routes.dart';
 import '../storage/secure_token_storage.dart';
@@ -75,6 +77,8 @@ Future<void> init() async {
   initCart();
   initProduct();
   initProfile();
+  initChat();
+
 
   /// Router LAST
 
