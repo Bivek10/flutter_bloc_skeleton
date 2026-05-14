@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart' show GoRouter, RoutingConfig;
 
 import '../../features/auth/auth.dart' show AuthRoutes;
 import '../../features/cart/cart.dart' show CartRoutes;
+import '../../features/chat/chat.dart' show ChatRoutes;
+
 import '../../../shared/widgets/organisms/page_not_found.dart'
     show PageNotFoundView;
 import '../../features/product/presentation/routes/product_routes.dart'
@@ -37,7 +39,9 @@ class AppRouter extends GoRouter {
                ...ProfileRoutes.routes,
                ...ProductRoutes.routes,
                ...CartRoutes.routes,
+               ...ChatRoutes.routes,
              ],
+
            ),
          ),
          errorBuilder: (context, state) => const PageNotFoundView(),

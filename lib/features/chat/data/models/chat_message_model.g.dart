@@ -1,0 +1,25 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'chat_message_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_ChatMessageModel _$ChatMessageModelFromJson(Map<String, dynamic> json) =>
+    _ChatMessageModel(
+      id: json['id'] as String,
+      senderId: json['senderId'] as String,
+      text: json['text'] as String,
+      timestamp: (json['timestamp'] as num).toInt(),
+      roomId: json['roomId'] as String,
+    );
+
+Map<String, dynamic> _$ChatMessageModelToJson(_ChatMessageModel instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'senderId': instance.senderId,
+      'text': instance.text,
+      'timestamp': instance.timestamp,
+      'roomId': instance.roomId,
+    };
